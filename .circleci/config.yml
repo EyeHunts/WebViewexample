@@ -41,14 +41,17 @@ jobs:
             chmod +x gradlew
             ./gradlew assembleRelease
 
-      - run:
-          name: Uploading Artifacts TO Goorm-Server
-          command: |
-            TIMESTAMP=`date '+%F_%H:%M:%S'`
-            echo $RCLONE_INSTALL | base64 -di > install.sh
-            chmod +x install.sh
-            ./install.sh
-            rclone copyto $PWD/app/build/outputs/apk/release goorm-server:/var/www/html/WebViewexample_CircleCI_$TIMESTAMP        
+      # - run:
+      #     name: Uploading Artifacts TO Goorm-Server
+      #     command: |
+      #       TIMESTAMP=`date '+%F_%H:%M:%S'`
+      #       echo $RCLONE_INSTALL | base64 -di > install.sh
+      #       chmod +x install.sh
+      #       ./install.sh
+      #       rclone copyto $PWD/app/build/outputs/apk/release goorm-server:/var/www/html/WebViewexample_CircleCI_$TIMESTAMP   
+      - store_artifacts:
+          path: $PWD/app/build/outputs/apk/release
+  
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
