@@ -21,9 +21,9 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    buildFeatures {
-        viewBinding true
-    }
+    // buildFeatures {
+    //     viewBinding true
+    // }
 
     // APK splitting
     splits {
