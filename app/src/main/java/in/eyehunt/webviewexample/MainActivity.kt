@@ -4,6 +4,8 @@ import android.graphics.Bitmap
 import android.os.Build
 // import android.support.v7.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatActivity
+// import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebSettings
