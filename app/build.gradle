@@ -22,7 +22,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding true
+        viewBinding false
     }
 
     // APK splitting
