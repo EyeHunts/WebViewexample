@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
         settings.javaScriptEnabled = true
 
         // Enable and setup web view cache
-        settings.setAppCacheEnabled(true) @Deprecated
+        settings.setAppCacheEnabled(true); @Deprecated
         settings.cacheMode = WebSettings.LOAD_DEFAULT
-        settings.setAppCachePath(cacheDir.path)
+        settings.setAppCachePath(cacheDir.path);
 
 
         // Enable zooming in web view
