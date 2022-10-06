@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         settings.javaScriptEnabled = true
 
         // Enable and setup web view cache
-        settings.setAppCacheEnabled = true
+        settings.setAppCacheEnabled'true' @Deperecated
         settings.cacheMode = WebSettings.LOAD_DEFAULT
         settings.setAppCachePath(cacheDir.path)
 
