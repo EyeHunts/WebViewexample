@@ -2,8 +2,7 @@ package `in`.eyehunt.webviewexample
 
 import android.graphics.Bitmap
 import android.os.Build
-// import android.support.v7.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebSettings
@@ -13,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val url = "https://www.google.com/"
+    private val url = "http://tutorial.eyehunt.in/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
